@@ -33,7 +33,6 @@
             overflow-x: hidden;
         }
 
-        /* Animação de entrada suave */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -49,7 +48,6 @@
             animation: fadeInUp 0.8s ease-out forwards;
         }
 
-        /* Header Premium */
         header {
             background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
             padding: 60px 20px;
@@ -112,7 +110,6 @@
             margin-top: 10px;
         }
 
-        /* Navegação */
         nav {
             background: rgba(20, 20, 20, 0.95);
             backdrop-filter: blur(10px);
@@ -129,6 +126,7 @@
             display: flex;
             justify-content: center;
             gap: 40px;
+            flex-wrap: wrap;
         }
 
         .nav-link {
@@ -144,6 +142,10 @@
             gap: 8px;
             padding: 10px 20px;
             border-radius: 8px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-family: inherit;
         }
 
         .nav-link:hover, .nav-link.active {
@@ -151,14 +153,12 @@
             background: rgba(201, 162, 39, 0.1);
         }
 
-        /* Container principal */
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 40px 20px;
         }
 
-        /* Seção de Stats */
         .stats-bar {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -202,7 +202,6 @@
             letter-spacing: 2px;
         }
 
-        /* Botões Premium */
         .btn {
             display: inline-flex;
             align-items: center;
@@ -249,7 +248,6 @@
             font-size: 1rem;
         }
 
-        /* Hero Section */
         .hero {
             text-align: center;
             padding: 60px 20px;
@@ -277,7 +275,6 @@
             flex-wrap: wrap;
         }
 
-        /* Grid de Contas */
         .section-header {
             display: flex;
             justify-content: space-between;
@@ -285,6 +282,8 @@
             margin-bottom: 40px;
             padding-bottom: 20px;
             border-bottom: 1px solid var(--border);
+            flex-wrap: wrap;
+            gap: 20px;
         }
 
         .section-title {
@@ -536,7 +535,6 @@
             box-shadow: 0 15px 30px rgba(201, 162, 39, 0.4);
         }
 
-        /* Botão Flutuante */
         .fab {
             position: fixed;
             bottom: 40px;
@@ -583,7 +581,6 @@
             transform: translateX(-10px);
         }
 
-        /* Modais */
         .modal {
             display: none;
             position: fixed;
@@ -732,15 +729,16 @@
             height: 20px;
             accent-color: var(--accent);
             margin-top: 2px;
+            cursor: pointer;
         }
 
         .checkbox-group label {
             font-size: 0.9rem;
             color: var(--text-muted);
             line-height: 1.6;
+            cursor: pointer;
         }
 
-        /* Modal de Compra */
         .payment-details {
             background: var(--primary);
             border-radius: 16px;
@@ -752,4 +750,5 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            pad
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border)
